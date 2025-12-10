@@ -9,21 +9,27 @@ A minimal Node.js + Express backend with MySQL to search restaurants by dish nam
 
 ## Setup (local)
 1. Clone the repo
-2. Install dependencies using "npm i" command
-3. Create the .env file with variables given below
-4. run the project using "node app.js" command
-
-** .env **
-- PORT=3000         
-- DB_HOST=crossover.proxy.rlwy.net
-- DB_USER=root
-- DB_PASSWORD=XLrBWyzVEKBFLejBPaCWAdcOvxqTlsAA
-- DB_NAME=railway
-- DB_PORT=14344
-
-
-
-
+```bash
+git clone https://github.com/AnudeepEndapelly/SearchByDishName.git
+```
+2. Install dependencies 
 ```bash
 npm install
+```
+3. Create the .env file with variables given below
+```bash
+PORT=3000         
+DB_HOST=crossover.proxy.rlwy.net
+DB_USER=root
+DB_PASSWORD=XLrBWyzVEKBFLejBPaCWAdcOvxqTlsAA
+DB_NAME=railway
+DB_PORT=14344
+```
+4. run the project 
+```bash
 node app.js
+```
+5. open the below url in your  browser
+```bash
+http://localhost:3000/search/dishes?name=Biryani&minPrice=150&maxPrice=300
+```
